@@ -1,2 +1,3 @@
 # PCB-X8-Backplane
-The board to attach all boards. Note: May not actually be a blackplane!
+The board to attach all boards. Note: May not actually be a backplane!
+Here is another line!
