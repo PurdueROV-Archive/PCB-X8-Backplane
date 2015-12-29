@@ -706,15 +706,45 @@ design rules under a new name.</description>
 <attribute name="DIGIKEY-FEMALE-PN" value="WM2640CT-ND" x="-5.334" y="-59.182" size="1.778" layer="27" display="off"/>
 <attribute name="DIGIKEY-MALE-PN" value="WM1847-ND" x="-5.334" y="-59.182" size="1.778" layer="27" display="off"/>
 </element>
-<element name="MAIN_CAM_SERVO" library="Connectors" package="MICRO-FIT-4-SMD" value="MICRO-FIT-4-SMD-PART" x="-6.096" y="-71.628">
+<element name="MAIN_CAM_POW" library="Connectors" package="MICRO-FIT-4-SMD" value="MICRO-FIT-4-SMD-PART" x="-6.096" y="-71.628">
 <attribute name="DIGIKEY-CONTACT-PN" value="WM1125CT-ND" x="-6.096" y="-71.628" size="1.778" layer="27" display="off"/>
 <attribute name="DIGIKEY-FEMALE-PN" value="WM2640CT-ND" x="-6.096" y="-71.628" size="1.778" layer="27" display="off"/>
 <attribute name="DIGIKEY-MALE-PN" value="WM1847-ND" x="-6.096" y="-71.628" size="1.778" layer="27" display="off"/>
 </element>
-<element name="MAIN_CAM_POWER" library="Connectors" package="MICRO-FIT-4-SMD" value="MICRO-FIT-4-SMD-PART" x="-6.858" y="-84.074">
-<attribute name="DIGIKEY-CONTACT-PN" value="WM1125CT-ND" x="-6.858" y="-84.074" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY-FEMALE-PN" value="WM2640CT-ND" x="-6.858" y="-84.074" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY-MALE-PN" value="WM1847-ND" x="-6.858" y="-84.074" size="1.778" layer="27" display="off"/>
+<element name="EXTRA_SERVO" library="Connectors" package="MICRO-FIT-4-SMD" value="MICRO-FIT-4-SMD-PART" x="-6.858" y="-96.52">
+<attribute name="DIGIKEY-CONTACT-PN" value="WM1125CT-ND" x="-7.62" y="-96.52" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY-FEMALE-PN" value="WM2640CT-ND" x="-7.62" y="-96.52" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY-MALE-PN" value="WM1847-ND" x="-7.62" y="-96.52" size="1.778" layer="27" display="off"/>
+</element>
+<element name="ETH_POWER" library="Connectors" package="MICRO-FIT-4-SMD" value="MICRO-FIT-4-SMD-PART" x="-6.858" y="-108.966">
+<attribute name="DIGIKEY-CONTACT-PN" value="WM1125CT-ND" x="-7.62" y="-108.966" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY-FEMALE-PN" value="WM2640CT-ND" x="-7.62" y="-108.966" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY-MALE-PN" value="WM1847-ND" x="-7.62" y="-108.966" size="1.778" layer="27" display="off"/>
+</element>
+<element name="SOLENOID_POWER" library="Connectors" package="MICRO-FIT-4-SMD" value="MICRO-FIT-4-SMD-PART" x="-7.62" y="-121.412">
+<attribute name="DIGIKEY-CONTACT-PN" value="WM1125CT-ND" x="-7.62" y="-121.412" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY-FEMALE-PN" value="WM2640CT-ND" x="-7.62" y="-121.412" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY-MALE-PN" value="WM1847-ND" x="-7.62" y="-121.412" size="1.778" layer="27" display="off"/>
+</element>
+<element name="SOLENOID_DATA" library="Connectors" package="MICRO-FIT-4-SMD" value="MICRO-FIT-4-SMD-PART" x="-8.382" y="-133.858">
+<attribute name="DIGIKEY-CONTACT-PN" value="WM1125CT-ND" x="-8.382" y="-133.858" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY-FEMALE-PN" value="WM2640CT-ND" x="-8.382" y="-133.858" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY-MALE-PN" value="WM1847-ND" x="-8.382" y="-133.858" size="1.778" layer="27" display="off"/>
+</element>
+<element name="MAIN_CAM_DATA" library="Connectors" package="MICRO-FIT-4-SMD" value="MICRO-FIT-4-SMD-PART" x="-9.144" y="-146.304">
+<attribute name="DIGIKEY-CONTACT-PN" value="WM1125CT-ND" x="-9.144" y="-146.304" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY-FEMALE-PN" value="WM2640CT-ND" x="-9.144" y="-146.304" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY-MALE-PN" value="WM1847-ND" x="-9.144" y="-146.304" size="1.778" layer="27" display="off"/>
+</element>
+<element name="SEC_CAM_2" library="Connectors" package="MICRO-FIT-4-SMD" value="MICRO-FIT-4-SMD-PART" x="-9.144" y="-158.75">
+<attribute name="DIGIKEY-CONTACT-PN" value="WM1125CT-ND" x="-9.906" y="-158.75" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY-FEMALE-PN" value="WM2640CT-ND" x="-9.906" y="-158.75" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY-MALE-PN" value="WM1847-ND" x="-9.906" y="-158.75" size="1.778" layer="27" display="off"/>
+</element>
+<element name="SEC_CAM_1" library="Connectors" package="MICRO-FIT-4-SMD" value="MICRO-FIT-4-SMD-PART" x="-9.144" y="-171.196">
+<attribute name="DIGIKEY-CONTACT-PN" value="WM1125CT-ND" x="-9.906" y="-171.196" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY-FEMALE-PN" value="WM2640CT-ND" x="-9.906" y="-171.196" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY-MALE-PN" value="WM1847-ND" x="-9.906" y="-171.196" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
 <signals>
@@ -722,7 +752,6 @@ design rules under a new name.</description>
 <contactref element="POWER_INPUT" pad="C3"/>
 <contactref element="POWER_INPUT" pad="C4"/>
 <contactref element="NAV_POWER" pad="C4"/>
-<contactref element="MAIN_CAM_POWER" pad="C4"/>
 <contactref element="BUCK_REGULATOR_BOARD" pad="31"/>
 <contactref element="BUCK_REGULATOR_BOARD" pad="32"/>
 <contactref element="BUCK_REGULATOR_BOARD" pad="39"/>
@@ -745,40 +774,50 @@ design rules under a new name.</description>
 <contactref element="BUCK_REGULATOR_BOARD" pad="48"/>
 <contactref element="BUCK_REGULATOR_BOARD" pad="41"/>
 <contactref element="BUCK_REGULATOR_BOARD" pad="42"/>
-<wire x1="10.79" y1="-30.335" x2="7.742" y2="-80.119" width="0" layer="19" extent="1-1"/>
+<contactref element="SOLENOID_POWER" pad="C3"/>
+<contactref element="SOLENOID_POWER" pad="C4"/>
+<contactref element="MAIN_CAM_POW" pad="C4"/>
+<contactref element="SEC_CAM_2" pad="C3"/>
+<contactref element="SEC_CAM_2" pad="C4"/>
+<contactref element="SEC_CAM_1" pad="C3"/>
+<contactref element="SEC_CAM_1" pad="C4"/>
+<wire x1="5.456" y1="-167.241" x2="2.456" y2="-167.241" width="0" layer="19" extent="1-1"/>
+<wire x1="2.456" y1="-154.795" x2="2.456" y2="-167.241" width="0" layer="19" extent="1-1"/>
+<wire x1="5.456" y1="-154.795" x2="2.456" y2="-154.795" width="0" layer="19" extent="1-1"/>
+<wire x1="3.98" y1="-117.457" x2="2.456" y2="-154.795" width="0" layer="19" extent="1-1"/>
+<wire x1="6.98" y1="-117.457" x2="3.98" y2="-117.457" width="0" layer="19" extent="1-1"/>
+<wire x1="8.504" y1="-67.673" x2="6.98" y2="-117.457" width="0" layer="19" extent="1-1"/>
+<wire x1="10.79" y1="-30.335" x2="8.504" y2="-67.673" width="0" layer="19" extent="1-1"/>
 <wire x1="57.282" y1="4.173" x2="10.79" y2="-30.335" width="0" layer="19" extent="1-1"/>
 <wire x1="60.282" y1="4.173" x2="57.282" y2="4.173" width="0" layer="19" extent="1-1"/>
-<wire x1="51.696" y1="18.366" x2="60.282" y2="4.173" width="0" layer="19" extent="1-1"/>
-<wire x1="52.496" y1="18.366" x2="51.696" y2="18.366" width="0" layer="19" extent="1-1"/>
-<wire x1="53.296" y1="18.366" x2="52.496" y2="18.366" width="0" layer="19" extent="1-1"/>
-<wire x1="54.096" y1="18.366" x2="53.296" y2="18.366" width="0" layer="19" extent="1-1"/>
-<wire x1="54.896" y1="18.366" x2="54.096" y2="18.366" width="0" layer="19" extent="1-1"/>
-<wire x1="55.696" y1="18.366" x2="54.896" y2="18.366" width="0" layer="19" extent="1-1"/>
-<wire x1="56.496" y1="18.366" x2="55.696" y2="18.366" width="0" layer="19" extent="1-1"/>
-<wire x1="54.896" y1="21.766" x2="54.896" y2="18.366" width="0" layer="19" extent="1-1"/>
-<wire x1="55.696" y1="21.766" x2="54.896" y2="21.766" width="0" layer="19" extent="1-1"/>
-<wire x1="56.496" y1="21.766" x2="55.696" y2="21.766" width="0" layer="19" extent="1-1"/>
+<wire x1="60.496" y1="18.366" x2="60.282" y2="4.173" width="0" layer="19" extent="1-1"/>
+<wire x1="61.296" y1="18.366" x2="60.496" y2="18.366" width="0" layer="19" extent="1-1"/>
+<wire x1="62.096" y1="18.366" x2="61.296" y2="18.366" width="0" layer="19" extent="1-1"/>
+<wire x1="62.896" y1="18.366" x2="62.096" y2="18.366" width="0" layer="19" extent="1-1"/>
+<wire x1="62.896" y1="21.766" x2="62.896" y2="18.366" width="0" layer="19" extent="1-1"/>
+<wire x1="62.096" y1="21.766" x2="62.896" y2="21.766" width="0" layer="19" extent="1-1"/>
+<wire x1="61.296" y1="21.766" x2="62.096" y2="21.766" width="0" layer="19" extent="1-1"/>
+<wire x1="60.496" y1="21.766" x2="61.296" y2="21.766" width="0" layer="19" extent="1-1"/>
+<wire x1="56.496" y1="21.766" x2="60.496" y2="21.766" width="0" layer="19" extent="1-1"/>
+<wire x1="55.696" y1="21.766" x2="56.496" y2="21.766" width="0" layer="19" extent="1-1"/>
+<wire x1="54.896" y1="21.766" x2="55.696" y2="21.766" width="0" layer="19" extent="1-1"/>
 <wire x1="54.096" y1="21.766" x2="54.896" y2="21.766" width="0" layer="19" extent="1-1"/>
 <wire x1="53.296" y1="21.766" x2="54.096" y2="21.766" width="0" layer="19" extent="1-1"/>
 <wire x1="52.496" y1="21.766" x2="53.296" y2="21.766" width="0" layer="19" extent="1-1"/>
 <wire x1="51.696" y1="21.766" x2="52.496" y2="21.766" width="0" layer="19" extent="1-1"/>
-<wire x1="60.496" y1="21.766" x2="56.496" y2="21.766" width="0" layer="19" extent="1-1"/>
-<wire x1="61.296" y1="21.766" x2="60.496" y2="21.766" width="0" layer="19" extent="1-1"/>
-<wire x1="62.096" y1="21.766" x2="61.296" y2="21.766" width="0" layer="19" extent="1-1"/>
-<wire x1="62.896" y1="21.766" x2="62.096" y2="21.766" width="0" layer="19" extent="1-1"/>
-<wire x1="62.896" y1="18.366" x2="62.896" y2="21.766" width="0" layer="19" extent="1-1"/>
-<wire x1="62.096" y1="18.366" x2="62.896" y2="18.366" width="0" layer="19" extent="1-1"/>
-<wire x1="61.296" y1="18.366" x2="62.096" y2="18.366" width="0" layer="19" extent="1-1"/>
-<wire x1="60.496" y1="18.366" x2="61.296" y2="18.366" width="0" layer="19" extent="1-1"/>
+<wire x1="56.496" y1="18.366" x2="56.496" y2="21.766" width="0" layer="19" extent="1-1"/>
+<wire x1="55.696" y1="18.366" x2="56.496" y2="18.366" width="0" layer="19" extent="1-1"/>
+<wire x1="54.896" y1="18.366" x2="55.696" y2="18.366" width="0" layer="19" extent="1-1"/>
+<wire x1="54.096" y1="18.366" x2="54.896" y2="18.366" width="0" layer="19" extent="1-1"/>
+<wire x1="53.296" y1="18.366" x2="54.096" y2="18.366" width="0" layer="19" extent="1-1"/>
+<wire x1="52.496" y1="18.366" x2="53.296" y2="18.366" width="0" layer="19" extent="1-1"/>
+<wire x1="51.696" y1="18.366" x2="52.496" y2="18.366" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND">
 <contactref element="POWER_INPUT" pad="C1"/>
 <contactref element="POWER_INPUT" pad="C2"/>
 <contactref element="NAV_POWER" pad="C2"/>
 <contactref element="TEMP_SENSOR" pad="C2"/>
-<contactref element="MAIN_CAM_SERVO" pad="C2"/>
-<contactref element="MAIN_CAM_POWER" pad="C2"/>
-<contactref element="MAIN_CAM_POWER" pad="C1"/>
 <contactref element="NAV_POWER" pad="C1"/>
 <contactref element="BUCK_REGULATOR_BOARD" pad="77"/>
 <contactref element="BUCK_REGULATOR_BOARD" pad="78"/>
@@ -806,8 +845,50 @@ design rules under a new name.</description>
 <contactref element="BUCK_REGULATOR_BOARD" pad="80"/>
 <contactref element="BUCK_REGULATOR_BOARD" pad="63"/>
 <contactref element="BUCK_REGULATOR_BOARD" pad="64"/>
+<contactref element="EXTRA_SERVO" pad="C2"/>
+<contactref element="ETH_POWER" pad="C1"/>
+<contactref element="ETH_POWER" pad="C2"/>
+<contactref element="SOLENOID_POWER" pad="C1"/>
+<contactref element="SOLENOID_POWER" pad="C2"/>
+<contactref element="MAIN_CAM_POW" pad="C1"/>
+<contactref element="MAIN_CAM_DATA" pad="C1"/>
+<contactref element="SEC_CAM_2" pad="C1"/>
+<contactref element="SEC_CAM_2" pad="C2"/>
+<contactref element="SEC_CAM_1" pad="C1"/>
+<contactref element="SEC_CAM_1" pad="C2"/>
+<contactref element="MAIN_CAM_DATA" pad="C2"/>
+<wire x1="-0.544" y1="-167.241" x2="-3.544" y2="-167.241" width="0" layer="19" extent="1-1"/>
+<wire x1="-3.544" y1="-154.795" x2="-3.544" y2="-167.241" width="0" layer="19" extent="1-1"/>
+<wire x1="-0.544" y1="-154.795" x2="-3.544" y2="-154.795" width="0" layer="19" extent="1-1"/>
+<wire x1="-3.544" y1="-142.349" x2="-3.544" y2="-154.795" width="0" layer="19" extent="1-1"/>
+<wire x1="-0.544" y1="-142.349" x2="-3.544" y2="-142.349" width="0" layer="19" extent="1-1"/>
+<wire x1="-2.02" y1="-117.457" x2="-3.544" y2="-142.349" width="0" layer="19" extent="1-1"/>
+<wire x1="0.98" y1="-117.457" x2="-2.02" y2="-117.457" width="0" layer="19" extent="1-1"/>
+<wire x1="-1.258" y1="-105.011" x2="-2.02" y2="-117.457" width="0" layer="19" extent="1-1"/>
+<wire x1="1.742" y1="-105.011" x2="-1.258" y2="-105.011" width="0" layer="19" extent="1-1"/>
+<wire x1="1.742" y1="-92.565" x2="1.742" y2="-105.011" width="0" layer="19" extent="1-1"/>
+<wire x1="-0.496" y1="-67.673" x2="1.742" y2="-92.565" width="0" layer="19" extent="1-1"/>
+<wire x1="3.266" y1="-55.227" x2="-0.496" y2="-67.673" width="0" layer="19" extent="1-1"/>
+<wire x1="1.79" y1="-30.335" x2="3.266" y2="-55.227" width="0" layer="19" extent="1-1"/>
+<wire x1="4.79" y1="-30.335" x2="1.79" y2="-30.335" width="0" layer="19" extent="1-1"/>
+<wire x1="63.282" y1="4.173" x2="4.79" y2="-30.335" width="0" layer="19" extent="1-1"/>
+<wire x1="66.282" y1="4.173" x2="63.282" y2="4.173" width="0" layer="19" extent="1-1"/>
+<wire x1="66.896" y1="18.366" x2="66.282" y2="4.173" width="0" layer="19" extent="1-1"/>
+<wire x1="66.096" y1="18.366" x2="66.896" y2="18.366" width="0" layer="19" extent="1-1"/>
+<wire x1="67.696" y1="18.366" x2="66.896" y2="18.366" width="0" layer="19" extent="1-1"/>
+<wire x1="68.496" y1="18.366" x2="67.696" y2="18.366" width="0" layer="19" extent="1-1"/>
+<wire x1="69.296" y1="18.366" x2="68.496" y2="18.366" width="0" layer="19" extent="1-1"/>
+<wire x1="70.096" y1="18.366" x2="69.296" y2="18.366" width="0" layer="19" extent="1-1"/>
+<wire x1="70.896" y1="18.366" x2="70.096" y2="18.366" width="0" layer="19" extent="1-1"/>
+<wire x1="71.696" y1="18.366" x2="70.896" y2="18.366" width="0" layer="19" extent="1-1"/>
+<wire x1="72.496" y1="18.366" x2="71.696" y2="18.366" width="0" layer="19" extent="1-1"/>
+<wire x1="73.296" y1="18.366" x2="72.496" y2="18.366" width="0" layer="19" extent="1-1"/>
+<wire x1="74.096" y1="18.366" x2="73.296" y2="18.366" width="0" layer="19" extent="1-1"/>
+<wire x1="65.296" y1="18.366" x2="66.096" y2="18.366" width="0" layer="19" extent="1-1"/>
+<wire x1="64.496" y1="18.366" x2="65.296" y2="18.366" width="0" layer="19" extent="1-1"/>
+<wire x1="74.096" y1="21.766" x2="74.096" y2="18.366" width="0" layer="19" extent="1-1"/>
+<wire x1="73.296" y1="21.766" x2="74.096" y2="21.766" width="0" layer="19" extent="1-1"/>
 <wire x1="72.496" y1="21.766" x2="73.296" y2="21.766" width="0" layer="19" extent="1-1"/>
-<wire x1="74.096" y1="21.766" x2="73.296" y2="21.766" width="0" layer="19" extent="1-1"/>
 <wire x1="71.696" y1="21.766" x2="72.496" y2="21.766" width="0" layer="19" extent="1-1"/>
 <wire x1="70.896" y1="21.766" x2="71.696" y2="21.766" width="0" layer="19" extent="1-1"/>
 <wire x1="70.096" y1="21.766" x2="70.896" y2="21.766" width="0" layer="19" extent="1-1"/>
@@ -818,27 +899,6 @@ design rules under a new name.</description>
 <wire x1="66.096" y1="21.766" x2="66.896" y2="21.766" width="0" layer="19" extent="1-1"/>
 <wire x1="65.296" y1="21.766" x2="66.096" y2="21.766" width="0" layer="19" extent="1-1"/>
 <wire x1="64.496" y1="21.766" x2="65.296" y2="21.766" width="0" layer="19" extent="1-1"/>
-<wire x1="73.296" y1="18.366" x2="73.296" y2="21.766" width="0" layer="19" extent="1-1"/>
-<wire x1="72.496" y1="18.366" x2="73.296" y2="18.366" width="0" layer="19" extent="1-1"/>
-<wire x1="74.096" y1="18.366" x2="73.296" y2="18.366" width="0" layer="19" extent="1-1"/>
-<wire x1="71.696" y1="18.366" x2="72.496" y2="18.366" width="0" layer="19" extent="1-1"/>
-<wire x1="70.896" y1="18.366" x2="71.696" y2="18.366" width="0" layer="19" extent="1-1"/>
-<wire x1="70.096" y1="18.366" x2="70.896" y2="18.366" width="0" layer="19" extent="1-1"/>
-<wire x1="69.296" y1="18.366" x2="70.096" y2="18.366" width="0" layer="19" extent="1-1"/>
-<wire x1="68.496" y1="18.366" x2="69.296" y2="18.366" width="0" layer="19" extent="1-1"/>
-<wire x1="67.696" y1="18.366" x2="68.496" y2="18.366" width="0" layer="19" extent="1-1"/>
-<wire x1="66.896" y1="18.366" x2="67.696" y2="18.366" width="0" layer="19" extent="1-1"/>
-<wire x1="66.096" y1="18.366" x2="66.896" y2="18.366" width="0" layer="19" extent="1-1"/>
-<wire x1="65.296" y1="18.366" x2="66.096" y2="18.366" width="0" layer="19" extent="1-1"/>
-<wire x1="64.496" y1="18.366" x2="65.296" y2="18.366" width="0" layer="19" extent="1-1"/>
-<wire x1="66.282" y1="4.173" x2="64.496" y2="18.366" width="0" layer="19" extent="1-1"/>
-<wire x1="63.282" y1="4.173" x2="66.282" y2="4.173" width="0" layer="19" extent="1-1"/>
-<wire x1="4.79" y1="-30.335" x2="63.282" y2="4.173" width="0" layer="19" extent="1-1"/>
-<wire x1="1.79" y1="-30.335" x2="4.79" y2="-30.335" width="0" layer="19" extent="1-1"/>
-<wire x1="3.266" y1="-55.227" x2="4.79" y2="-30.335" width="0" layer="19" extent="1-1"/>
-<wire x1="2.504" y1="-67.673" x2="3.266" y2="-55.227" width="0" layer="19" extent="1-1"/>
-<wire x1="1.742" y1="-80.119" x2="2.504" y2="-67.673" width="0" layer="19" extent="1-1"/>
-<wire x1="-1.258" y1="-80.119" x2="1.742" y2="-80.119" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCL">
 <contactref element="NAV_COM" pad="C4"/>
@@ -854,7 +914,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="+5V">
 <contactref element="NAV_POWER" pad="C3"/>
-<contactref element="MAIN_CAM_SERVO" pad="C3"/>
+<contactref element="MAIN_CAM_POW" pad="C3"/>
 <contactref element="BUCK_REGULATOR_BOARD" pad="11"/>
 <contactref element="BUCK_REGULATOR_BOARD" pad="12"/>
 <contactref element="BUCK_REGULATOR_BOARD" pad="10"/>
@@ -877,6 +937,16 @@ design rules under a new name.</description>
 <contactref element="BUCK_REGULATOR_BOARD" pad="26"/>
 <contactref element="BUCK_REGULATOR_BOARD" pad="17"/>
 <contactref element="BUCK_REGULATOR_BOARD" pad="18"/>
+<contactref element="EXTRA_SERVO" pad="C3"/>
+<contactref element="ETH_POWER" pad="C3"/>
+<contactref element="ETH_POWER" pad="C4"/>
+<contactref element="MAIN_CAM_POW" pad="C2"/>
+<contactref element="SOLENOID_DATA" pad="C4"/>
+<wire x1="4.742" y1="-105.011" x2="6.218" y2="-129.903" width="0" layer="19" extent="1-1"/>
+<wire x1="7.742" y1="-105.011" x2="4.742" y2="-105.011" width="0" layer="19" extent="1-1"/>
+<wire x1="4.742" y1="-92.565" x2="4.742" y2="-105.011" width="0" layer="19" extent="1-1"/>
+<wire x1="5.504" y1="-67.673" x2="4.742" y2="-92.565" width="0" layer="19" extent="1-1"/>
+<wire x1="2.504" y1="-67.673" x2="5.504" y2="-67.673" width="0" layer="19" extent="1-1"/>
 <wire x1="7.79" y1="-30.335" x2="5.504" y2="-67.673" width="0" layer="19" extent="1-1"/>
 <wire x1="41.296" y1="18.366" x2="7.79" y2="-30.335" width="0" layer="19" extent="1-1"/>
 <wire x1="42.096" y1="18.366" x2="41.296" y2="18.366" width="0" layer="19" extent="1-1"/>
@@ -890,8 +960,8 @@ design rules under a new name.</description>
 <wire x1="48.496" y1="18.366" x2="47.696" y2="18.366" width="0" layer="19" extent="1-1"/>
 <wire x1="49.296" y1="18.366" x2="48.496" y2="18.366" width="0" layer="19" extent="1-1"/>
 <wire x1="48.496" y1="21.766" x2="48.496" y2="18.366" width="0" layer="19" extent="1-1"/>
-<wire x1="47.696" y1="21.766" x2="48.496" y2="21.766" width="0" layer="19" extent="1-1"/>
 <wire x1="49.296" y1="21.766" x2="48.496" y2="21.766" width="0" layer="19" extent="1-1"/>
+<wire x1="47.696" y1="21.766" x2="48.496" y2="21.766" width="0" layer="19" extent="1-1"/>
 <wire x1="46.896" y1="21.766" x2="47.696" y2="21.766" width="0" layer="19" extent="1-1"/>
 <wire x1="46.096" y1="21.766" x2="46.896" y2="21.766" width="0" layer="19" extent="1-1"/>
 <wire x1="45.296" y1="21.766" x2="46.096" y2="21.766" width="0" layer="19" extent="1-1"/>
@@ -923,10 +993,10 @@ design rules under a new name.</description>
 <contactref element="TEMP_SENSOR" pad="C1"/>
 </signal>
 <signal name="MAIN_SERVO">
-<contactref element="MAIN_CAM_SERVO" pad="C4"/>
+<contactref element="MAIN_CAM_DATA" pad="C4"/>
 </signal>
 <signal name="LED_PWM">
-<contactref element="MAIN_CAM_POWER" pad="C3"/>
+<contactref element="MAIN_CAM_DATA" pad="C3"/>
 </signal>
 <signal name="BUCK_SCL">
 <contactref element="BUCK_REGULATOR_BOARD" pad="1"/>
@@ -937,6 +1007,18 @@ design rules under a new name.</description>
 <contactref element="BUCK_REGULATOR_BOARD" pad="3"/>
 <contactref element="BUCK_REGULATOR_BOARD" pad="4"/>
 <wire x1="40.496" y1="18.366" x2="40.496" y2="21.766" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SECOND_SERVO">
+<contactref element="EXTRA_SERVO" pad="C4"/>
+</signal>
+<signal name="CLK">
+<contactref element="SOLENOID_DATA" pad="C3"/>
+</signal>
+<signal name="ENABLE">
+<contactref element="SOLENOID_DATA" pad="C2"/>
+</signal>
+<signal name="DATA">
+<contactref element="SOLENOID_DATA" pad="C1"/>
 </signal>
 </signals>
 </board>
