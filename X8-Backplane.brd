@@ -491,40 +491,32 @@ MANUFACTURER:SAMTEC.</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default">
-<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+<designrules name="GoldPhoenix">
+<description language="en">
+
+&lt;b&gt;Gold Phoenix PCB Design Rules&lt;/b&gt;
 &lt;p&gt;
-Die Standard-Design-Rules sind so gewählt, dass sie für 
-die meisten Anwendungen passen. Sollte ihre Platine 
-besondere Anforderungen haben, treffen Sie die erforderlichen
-Einstellungen hier und speichern die Design Rules unter 
-einem neuen Namen ab.</description>
-<description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
-&lt;p&gt;
-The default Design Rules have been set to cover
-a wide range of applications. Your particular design
-may have different requirements, so please make the
-necessary adjustments and save your customized
-design rules under a new name.</description>
+Created by Nick Molo for the Purdue IEEE ROV Team
+</description>
 <param name="layerSetup" value="(1*16)"/>
 <param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
 <param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="8mil"/>
-<param name="mdWirePad" value="8mil"/>
-<param name="mdWireVia" value="8mil"/>
-<param name="mdPadPad" value="8mil"/>
-<param name="mdPadVia" value="8mil"/>
-<param name="mdViaVia" value="8mil"/>
-<param name="mdSmdPad" value="8mil"/>
-<param name="mdSmdVia" value="8mil"/>
-<param name="mdSmdSmd" value="8mil"/>
+<param name="mdWireWire" value="7mil"/>
+<param name="mdWirePad" value="7mil"/>
+<param name="mdWireVia" value="7mil"/>
+<param name="mdPadPad" value="7mil"/>
+<param name="mdPadVia" value="7mil"/>
+<param name="mdViaVia" value="7mil"/>
+<param name="mdSmdPad" value="7mil"/>
+<param name="mdSmdVia" value="7mil"/>
+<param name="mdSmdSmd" value="7mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="40mil"/>
+<param name="mdCopperDimension" value="10mil"/>
 <param name="mdDrill" value="8mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="10mil"/>
-<param name="msDrill" value="24mil"/>
+<param name="msWidth" value="7mil"/>
+<param name="msDrill" value="10mil"/>
 <param name="msMicroVia" value="9.99mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
@@ -540,9 +532,9 @@ design rules under a new name.</description>
 <param name="rlMaxPadInner" value="20mil"/>
 <param name="rlMinPadBottom" value="10mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="8mil"/>
+<param name="rlMinViaOuter" value="10mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="8mil"/>
+<param name="rlMinViaInner" value="10mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
 <param name="rlMinMicroViaOuter" value="4mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
@@ -559,7 +551,7 @@ design rules under a new name.</description>
 <param name="mlMaxStopFrame" value="4mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="0mil"/>
+<param name="mlViaStopLimit" value="25mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
@@ -807,9 +799,8 @@ design rules under a new name.</description>
 <via x="48.514" y="53.594" extent="1-16" drill="0.6"/>
 <via x="45.974" y="53.594" extent="1-16" drill="0.6"/>
 <via x="43.688" y="53.594" extent="1-16" drill="0.6"/>
-<wire x1="41.402" y1="53.594" x2="43.688" y2="53.594" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="GND">
+<signal name="GND" airwireshidden="yes">
 <contactref element="POWER_INPUT" pad="C1"/>
 <contactref element="POWER_INPUT" pad="C2"/>
 <contactref element="TEMP_SENSOR" pad="C2"/>
@@ -882,6 +873,22 @@ design rules under a new name.</description>
 <vertex x="99.314" y="71.12"/>
 <vertex x="70.104" y="100.33"/>
 </polygon>
+<contactref element="MICRO_BOARD" pad="25"/>
+<contactref element="MICRO_BOARD" pad="26"/>
+<contactref element="MICRO_BOARD" pad="21"/>
+<contactref element="MICRO_BOARD" pad="22"/>
+<contactref element="MICRO_BOARD" pad="23"/>
+<contactref element="MICRO_BOARD" pad="24"/>
+<contactref element="MICRO_BOARD" pad="27"/>
+<contactref element="MICRO_BOARD" pad="28"/>
+<contactref element="MICRO_BOARD" pad="29"/>
+<contactref element="MICRO_BOARD" pad="30"/>
+<contactref element="MICRO_BOARD" pad="31"/>
+<contactref element="MICRO_BOARD" pad="32"/>
+<contactref element="MICRO_BOARD" pad="35"/>
+<contactref element="MICRO_BOARD" pad="36"/>
+<contactref element="MICRO_BOARD" pad="33"/>
+<contactref element="MICRO_BOARD" pad="34"/>
 <wire x1="62.882" y1="50.468" x2="63.682" y2="50.468" width="0" layer="19" extent="1-1"/>
 <wire x1="62.082" y1="50.468" x2="62.882" y2="50.468" width="0" layer="19" extent="1-1"/>
 <wire x1="61.282" y1="50.468" x2="62.082" y2="50.468" width="0" layer="19" extent="1-1"/>
@@ -908,18 +915,73 @@ design rules under a new name.</description>
 <wire x1="54.882" y1="47.068" x2="55.682" y2="47.068" width="0" layer="19" extent="1-1"/>
 <wire x1="54.082" y1="47.068" x2="54.882" y2="47.068" width="0" layer="19" extent="1-1"/>
 <wire x1="63.79" y1="61.105" x2="63.682" y2="50.468" width="0" layer="19" extent="1-16"/>
+<wire x1="35.136" y1="37.768" x2="54.082" y2="47.068" width="0" layer="19" extent="1-1"/>
+<wire x1="34.336" y1="37.768" x2="35.136" y2="37.768" width="0" layer="19" extent="1-1"/>
+<wire x1="33.536" y1="37.768" x2="34.336" y2="37.768" width="0" layer="19" extent="1-1"/>
+<wire x1="32.736" y1="37.768" x2="33.536" y2="37.768" width="0" layer="19" extent="1-1"/>
+<wire x1="31.936" y1="37.768" x2="32.736" y2="37.768" width="0" layer="19" extent="1-1"/>
+<wire x1="31.136" y1="37.768" x2="31.936" y2="37.768" width="0" layer="19" extent="1-1"/>
+<wire x1="30.336" y1="37.768" x2="31.136" y2="37.768" width="0" layer="19" extent="1-1"/>
+<wire x1="29.536" y1="37.768" x2="30.336" y2="37.768" width="0" layer="19" extent="1-1"/>
+<wire x1="33.536" y1="34.368" x2="33.536" y2="37.768" width="0" layer="19" extent="1-1"/>
+<wire x1="34.336" y1="34.368" x2="33.536" y2="34.368" width="0" layer="19" extent="1-1"/>
+<wire x1="35.136" y1="34.368" x2="34.336" y2="34.368" width="0" layer="19" extent="1-1"/>
+<wire x1="32.736" y1="34.368" x2="33.536" y2="34.368" width="0" layer="19" extent="1-1"/>
+<wire x1="31.936" y1="34.368" x2="32.736" y2="34.368" width="0" layer="19" extent="1-1"/>
+<wire x1="31.136" y1="34.368" x2="31.936" y2="34.368" width="0" layer="19" extent="1-1"/>
+<wire x1="30.336" y1="34.368" x2="31.136" y2="34.368" width="0" layer="19" extent="1-1"/>
+<wire x1="29.536" y1="34.368" x2="30.336" y2="34.368" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="SCL">
-<contactref element="NAV_COM" pad="C4"/>
+<signal name="NAV_SCL">
+<contactref element="MICRO_BOARD" pad="83"/>
+<contactref element="MICRO_BOARD" pad="84"/>
+<contactref element="NAV_COM" pad="C2"/>
+<wire x1="57.536" y1="37.768" x2="57.536" y2="34.368" width="0.4064" layer="1"/>
+<wire x1="57.536" y1="34.368" x2="57.536" y2="33.142" width="0.4064" layer="1"/>
+<wire x1="57.536" y1="33.142" x2="58.928" y2="31.75" width="0.4064" layer="1"/>
+<wire x1="58.928" y1="31.75" x2="64.516" y2="31.75" width="0.4064" layer="1"/>
+<wire x1="64.516" y1="31.75" x2="65.278" y2="30.988" width="0.4064" layer="1"/>
+<via x="65.278" y="30.988" extent="1-16" drill="0.6"/>
+<wire x1="65.278" y1="30.988" x2="70.1337625" y2="30.988" width="0.4064" layer="16"/>
+<wire x1="70.1337625" y1="30.988" x2="79.768275" y2="21.3534875" width="0.4064" layer="16"/>
 </signal>
-<signal name="SDA">
+<signal name="NAV_SDA">
+<contactref element="MICRO_BOARD" pad="82"/>
+<contactref element="MICRO_BOARD" pad="81"/>
 <contactref element="NAV_COM" pad="C3"/>
+<wire x1="56.736" y1="37.768" x2="56.736" y2="34.368" width="0.4064" layer="1"/>
+<wire x1="56.736" y1="34.368" x2="56.736" y2="32.418" width="0.4064" layer="1"/>
+<wire x1="56.736" y1="32.418" x2="58.674" y2="30.48" width="0.4064" layer="1"/>
+<wire x1="58.674" y1="30.48" x2="63.5" y2="30.48" width="0.4064" layer="1"/>
+<via x="63.5" y="30.48" extent="1-16" drill="0.6"/>
+<wire x1="63.5" y1="30.48" x2="64.008" y2="30.48" width="0.4064" layer="16"/>
+<wire x1="64.008" y1="30.48" x2="65.024" y2="29.464" width="0.4064" layer="16"/>
+<wire x1="65.024" y1="29.464" x2="67.415121875" y2="29.464" width="0.4064" layer="16"/>
+<wire x1="67.415121875" y1="29.464" x2="77.64695625" y2="19.232165625" width="0.4064" layer="16"/>
 </signal>
 <signal name="SONAR_PWM">
-<contactref element="NAV_COM" pad="C2"/>
+<contactref element="MICRO_BOARD" pad="67"/>
+<contactref element="MICRO_BOARD" pad="68"/>
+<contactref element="NAV_COM" pad="C4"/>
+<wire x1="51.136" y1="37.768" x2="51.136" y2="34.368" width="0.4064" layer="1"/>
+<wire x1="51.136" y1="34.368" x2="51.136" y2="30.906" width="0.4064" layer="1"/>
+<wire x1="51.136" y1="30.906" x2="53.594" y2="28.448" width="0.4064" layer="1"/>
+<wire x1="53.594" y1="28.448" x2="63.246" y2="28.448" width="0.4064" layer="1"/>
+<via x="63.246" y="28.448" extent="1-16" drill="0.6"/>
+<wire x1="63.246" y1="28.448" x2="64.18848125" y2="28.448" width="0.4064" layer="16"/>
+<wire x1="64.18848125" y1="28.448" x2="75.525634375" y2="17.110846875" width="0.4064" layer="16"/>
 </signal>
 <signal name="SONAR_DAC">
 <contactref element="NAV_COM" pad="C1"/>
+<contactref element="MICRO_BOARD" pad="91"/>
+<contactref element="MICRO_BOARD" pad="92"/>
+<wire x1="60.736" y1="37.768" x2="60.736" y2="34.368" width="0.4064" layer="1"/>
+<via x="65.532" y="32.512" extent="1-16" drill="0.6"/>
+<wire x1="65.532" y1="32.512" x2="61.468" y2="32.512" width="0.4064" layer="1"/>
+<wire x1="60.736" y1="34.368" x2="60.736" y2="33.244" width="0.4064" layer="1"/>
+<wire x1="60.736" y1="33.244" x2="61.468" y2="32.512" width="0.4064" layer="1"/>
+<wire x1="81.889596875" y1="23.47480625" x2="72.852403125" y2="32.512" width="0.4064" layer="16"/>
+<wire x1="72.852403125" y1="32.512" x2="65.532" y2="32.512" width="0.4064" layer="16"/>
 </signal>
 <signal name="+5V">
 <contactref element="MA5N_CAM_POW" pad="C3"/>
@@ -947,7 +1009,6 @@ design rules under a new name.</description>
 <contactref element="BUCK_REGULATOR_BOARD" pad="18"/>
 <contactref element="MA5N_CAM_POW" pad="C2"/>
 <contactref element="NAV_POWER" pad="C2"/>
-<contactref element="SOLENOID_DATA" pad="C1"/>
 <contactref element="ETH_POWER" pad="C1"/>
 <contactref element="ETH_POWER" pad="C2"/>
 <contactref element="EXTRA_SERVO" pad="C2"/>
@@ -975,13 +1036,58 @@ design rules under a new name.</description>
 <via x="32.766" y="53.594" extent="1-16" drill="0.6"/>
 <via x="35.56" y="43.688" extent="1-16" drill="0.6"/>
 <via x="32.766" y="43.688" extent="1-16" drill="0.6"/>
-<wire x1="32.766" y1="43.688" x2="21.188809375" y2="17.424403125" width="0" layer="19" extent="16-16"/>
+<contactref element="MICRO_BOARD" pad="11"/>
+<contactref element="MICRO_BOARD" pad="12"/>
+<contactref element="MICRO_BOARD" pad="9"/>
+<contactref element="MICRO_BOARD" pad="10"/>
+<contactref element="MICRO_BOARD" pad="1"/>
+<contactref element="MICRO_BOARD" pad="2"/>
+<contactref element="MICRO_BOARD" pad="5"/>
+<contactref element="MICRO_BOARD" pad="6"/>
+<contactref element="MICRO_BOARD" pad="7"/>
+<contactref element="MICRO_BOARD" pad="8"/>
+<contactref element="MICRO_BOARD" pad="3"/>
+<contactref element="MICRO_BOARD" pad="4"/>
+<contactref element="SOLENOID_DATA" pad="C4"/>
+<polygon width="0.4064" layer="1">
+<vertex x="20.066" y="32.004"/>
+<vertex x="20.066" y="45.974"/>
+<vertex x="39.37" y="45.974"/>
+<vertex x="39.37" y="41.402"/>
+<vertex x="25.908" y="41.402"/>
+<vertex x="25.908" y="32.004"/>
+</polygon>
+<wire x1="21.536" y1="34.368" x2="22.336" y2="34.368" width="0.4064" layer="1"/>
+<wire x1="14.82485" y1="23.788365625" x2="14.82485" y2="23.96885" width="0.4064" layer="16"/>
+<wire x1="14.82485" y1="23.96885" x2="22.86" y2="32.004" width="0.4064" layer="16"/>
+<wire x1="22.86" y1="32.004" x2="22.86" y2="32.766" width="0.4064" layer="16"/>
+<via x="22.86" y="32.766" extent="1-16" drill="0.6"/>
 </signal>
 <signal name="CANH">
-<contactref element="BRICKS_COM" pad="C4"/>
+<contactref element="MICRO_BOARD" pad="77"/>
+<contactref element="MICRO_BOARD" pad="78"/>
+<contactref element="BRICKS_COM" pad="C3"/>
+<wire x1="55.136" y1="37.768" x2="55.136" y2="34.368" width="0.4064" layer="1"/>
+<wire x1="55.136" y1="34.368" x2="55.136" y2="32.748" width="0.4064" layer="1"/>
+<wire x1="55.136" y1="32.748" x2="55.372" y2="32.512" width="0.4064" layer="1"/>
+<via x="55.372" y="32.512" extent="1-16" drill="0.6"/>
+<wire x1="55.372" y1="32.512" x2="55.372" y2="17.526" width="0.4064" layer="16"/>
+<wire x1="55.372" y1="17.526" x2="58.42" y2="14.478" width="0.4064" layer="16"/>
+<wire x1="58.42" y1="14.478" x2="58.42" y2="12.929" width="0.4064" layer="16"/>
+<wire x1="58.42" y1="12.929" x2="58.504" y2="12.845" width="0.4064" layer="16"/>
 </signal>
 <signal name="CANL">
-<contactref element="BRICKS_COM" pad="C3"/>
+<contactref element="MICRO_BOARD" pad="75"/>
+<contactref element="MICRO_BOARD" pad="76"/>
+<contactref element="BRICKS_COM" pad="C4"/>
+<wire x1="54.336" y1="37.768" x2="54.336" y2="34.368" width="0.4064" layer="1"/>
+<wire x1="54.336" y1="34.368" x2="54.336" y2="31.73" width="0.4064" layer="1"/>
+<wire x1="54.336" y1="31.73" x2="54.102" y2="31.496" width="0.4064" layer="1"/>
+<via x="54.102" y="31.496" extent="1-16" drill="0.6"/>
+<wire x1="54.102" y1="31.496" x2="54.102" y2="13.208" width="0.4064" layer="16"/>
+<wire x1="54.102" y1="13.208" x2="54.61" y2="12.7" width="0.4064" layer="16"/>
+<wire x1="54.61" y1="12.7" x2="55.359" y2="12.7" width="0.4064" layer="16"/>
+<wire x1="55.359" y1="12.7" x2="55.504" y2="12.845" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$3">
 <contactref element="BRICKS_COM" pad="C2"/>
@@ -995,11 +1101,33 @@ design rules under a new name.</description>
 <signal name="+3V3">
 <contactref element="TEMP_SENSOR" pad="C3"/>
 </signal>
-<signal name="N$7">
+<signal name="BACK_UP_TEMP_DATA">
 <contactref element="TEMP_SENSOR" pad="C1"/>
+<contactref element="MICRO_BOARD" pad="50"/>
+<contactref element="MICRO_BOARD" pad="49"/>
+<wire x1="40.736" y1="37.768" x2="40.736" y2="34.368" width="0.4064" layer="1"/>
+<wire x1="40.736" y1="37.768" x2="40.736" y2="38.958" width="0.4064" layer="1"/>
+<wire x1="40.736" y1="38.958" x2="40.894" y2="39.116" width="0.4064" layer="1"/>
+<via x="40.894" y="39.116" extent="1-16" drill="0.6"/>
+<wire x1="40.894" y1="39.116" x2="50.038" y2="39.116" width="0.4064" layer="16"/>
+<wire x1="50.038" y1="39.116" x2="50.546" y2="38.608" width="0.4064" layer="16"/>
+<wire x1="50.546" y1="38.608" x2="63.246" y2="38.608" width="0.4064" layer="16"/>
+<wire x1="63.246" y1="38.608" x2="68.326" y2="43.688" width="0.4064" layer="16"/>
+<wire x1="68.326" y1="43.688" x2="84.171" y2="43.688" width="0.4064" layer="16"/>
+<wire x1="84.171" y1="43.688" x2="84.183" y2="43.676" width="0.4064" layer="16"/>
 </signal>
 <signal name="MAIN_SERVO">
 <contactref element="MAIN_CAM_DATA" pad="C4"/>
+<contactref element="MICRO_BOARD" pad="73"/>
+<contactref element="MICRO_BOARD" pad="74"/>
+<wire x1="53.536" y1="37.768" x2="53.536" y2="34.368" width="0.4064" layer="1"/>
+<wire x1="53.536" y1="34.368" x2="53.536" y2="33.47" width="0.4064" layer="1"/>
+<wire x1="53.536" y1="33.47" x2="52.578" y2="32.512" width="0.4064" layer="1"/>
+<via x="52.578" y="32.512" extent="1-16" drill="0.6"/>
+<wire x1="52.578" y1="32.512" x2="33.782" y2="32.512" width="0.4064" layer="16"/>
+<wire x1="33.782" y1="32.512" x2="32.258" y2="30.988" width="0.4064" layer="16"/>
+<wire x1="32.258" y1="30.988" x2="32.258" y2="12.977" width="0.4064" layer="16"/>
+<wire x1="32.258" y1="12.977" x2="32.39" y2="12.845" width="0.4064" layer="16"/>
 </signal>
 <signal name="LED_PWM">
 <contactref element="MAIN_CAM_DATA" pad="C3"/>
@@ -1007,24 +1135,99 @@ design rules under a new name.</description>
 <signal name="BUCK_SCL">
 <contactref element="BUCK_REGULATOR_BOARD" pad="1"/>
 <contactref element="BUCK_REGULATOR_BOARD" pad="2"/>
-<wire x1="29.282" y1="47.068" x2="29.282" y2="50.468" width="0" layer="19" extent="1-1"/>
+<contactref element="MICRO_BOARD" pad="72"/>
+<contactref element="MICRO_BOARD" pad="71"/>
+<wire x1="52.736" y1="37.768" x2="52.736" y2="34.368" width="0.4064" layer="1"/>
+<wire x1="29.282" y1="50.468" x2="29.282" y2="47.068" width="0.4064" layer="1"/>
+<wire x1="52.736" y1="37.768" x2="52.736" y2="39.528" width="0.4064" layer="1"/>
+<wire x1="52.736" y1="39.528" x2="53.34" y2="40.132" width="0.4064" layer="1"/>
+<via x="53.34" y="40.132" extent="1-16" drill="0.6"/>
+<wire x1="53.34" y1="40.132" x2="52.324" y2="40.132" width="0.4064" layer="16"/>
+<wire x1="52.324" y1="40.132" x2="51.562" y2="39.37" width="0.4064" layer="16"/>
+<wire x1="51.562" y1="39.37" x2="51.054" y2="39.37" width="0.4064" layer="16"/>
+<wire x1="51.054" y1="39.37" x2="50.292" y2="40.132" width="0.4064" layer="16"/>
+<wire x1="50.292" y1="40.132" x2="30.226" y2="40.132" width="0.4064" layer="16"/>
+<wire x1="30.226" y1="40.132" x2="28.956" y2="41.402" width="0.4064" layer="16"/>
+<wire x1="28.956" y1="41.402" x2="28.956" y2="44.45" width="0.4064" layer="16"/>
+<wire x1="28.956" y1="44.45" x2="28.194" y2="45.212" width="0.4064" layer="16"/>
+<via x="28.194" y="45.212" extent="1-16" drill="0.6"/>
+<wire x1="28.194" y1="45.212" x2="29.282" y2="46.3" width="0.4064" layer="1"/>
+<wire x1="29.282" y1="47.068" x2="29.282" y2="46.3" width="0.4064" layer="1"/>
 </signal>
 <signal name="BUCK_SDA">
 <contactref element="BUCK_REGULATOR_BOARD" pad="3"/>
 <contactref element="BUCK_REGULATOR_BOARD" pad="4"/>
-<wire x1="30.082" y1="47.068" x2="30.082" y2="50.468" width="0" layer="19" extent="1-1"/>
+<contactref element="MICRO_BOARD" pad="69"/>
+<contactref element="MICRO_BOARD" pad="70"/>
+<wire x1="51.936" y1="37.768" x2="51.936" y2="34.368" width="0.4064" layer="1"/>
+<wire x1="30.082" y1="50.468" x2="30.082" y2="47.068" width="0.4064" layer="1"/>
+<wire x1="30.082" y1="47.068" x2="30.082" y2="45.322" width="0.4064" layer="1"/>
+<wire x1="30.082" y1="45.322" x2="29.972" y2="45.212" width="0.4064" layer="1"/>
+<via x="29.972" y="45.212" extent="1-16" drill="0.6"/>
+<wire x1="29.972" y1="45.212" x2="29.972" y2="41.656" width="0.4064" layer="16"/>
+<wire x1="29.972" y1="41.656" x2="30.734" y2="40.894" width="0.4064" layer="16"/>
+<wire x1="30.734" y1="40.894" x2="51.054" y2="40.894" width="0.4064" layer="16"/>
+<wire x1="51.054" y1="40.894" x2="51.308" y2="40.64" width="0.4064" layer="16"/>
+<via x="51.308" y="40.64" extent="1-16" drill="0.6"/>
+<wire x1="51.308" y1="40.64" x2="51.936" y2="40.012" width="0.4064" layer="1"/>
+<wire x1="51.936" y1="40.012" x2="51.936" y2="37.768" width="0.4064" layer="1"/>
 </signal>
 <signal name="SECOND_SERVO">
 <contactref element="EXTRA_SERVO" pad="C4"/>
+<contactref element="MICRO_BOARD" pad="119"/>
+<contactref element="MICRO_BOARD" pad="120"/>
+<wire x1="71.936" y1="37.768" x2="71.936" y2="34.368" width="0.4064" layer="1"/>
+<wire x1="71.936" y1="37.768" x2="71.936" y2="61.922" width="0.4064" layer="1"/>
+<wire x1="71.936" y1="61.922" x2="60.198" y2="73.66" width="0.4064" layer="1"/>
+<wire x1="60.198" y1="73.66" x2="22.098" y2="73.66" width="0.4064" layer="1"/>
+<wire x1="22.098" y1="73.66" x2="20.32" y2="75.438" width="0.4064" layer="1"/>
+<via x="20.32" y="75.438" extent="1-16" drill="0.6"/>
+<wire x1="20.32" y1="90.932" x2="24.638" y2="95.25" width="0.4064" layer="16"/>
+<wire x1="24.638" y1="95.25" x2="29.705" y2="95.25" width="0.4064" layer="16"/>
+<wire x1="29.705" y1="95.25" x2="29.85" y2="95.395" width="0.4064" layer="16"/>
+<wire x1="20.32" y1="75.438" x2="20.32" y2="90.932" width="0.4064" layer="16"/>
 </signal>
 <signal name="CLK">
-<contactref element="SOLENOID_DATA" pad="C3"/>
+<contactref element="MICRO_BOARD" pad="64"/>
+<contactref element="MICRO_BOARD" pad="63"/>
+<contactref element="SOLENOID_DATA" pad="C2"/>
+<wire x1="46.336" y1="37.768" x2="46.336" y2="34.368" width="0.4064" layer="1"/>
+<wire x1="46.336" y1="34.368" x2="46.336" y2="32.366" width="0.4064" layer="1"/>
+<wire x1="46.336" y1="32.366" x2="45.212" y2="31.242" width="0.4064" layer="1"/>
+<wire x1="45.212" y1="31.242" x2="28.702" y2="31.242" width="0.4064" layer="1"/>
+<wire x1="28.702" y1="31.242" x2="27.94" y2="30.48" width="0.4064" layer="1"/>
+<via x="27.94" y="30.48" extent="1-16" drill="0.6"/>
+<wire x1="27.94" y1="30.48" x2="20.574" y2="23.114" width="0.4064" layer="16"/>
+<wire x1="20.574" y1="23.114" x2="20.574" y2="21.052234375" width="0.4064" layer="16"/>
+<wire x1="20.574" y1="21.052234375" x2="19.067490625" y2="19.545725" width="0.4064" layer="16"/>
 </signal>
 <signal name="ENABLE">
-<contactref element="SOLENOID_DATA" pad="C2"/>
+<contactref element="MICRO_BOARD" pad="61"/>
+<contactref element="MICRO_BOARD" pad="62"/>
+<contactref element="SOLENOID_DATA" pad="C3"/>
+<wire x1="45.536" y1="37.768" x2="45.536" y2="34.368" width="0.4064" layer="1"/>
+<wire x1="45.536" y1="34.368" x2="45.536" y2="32.836" width="0.4064" layer="1"/>
+<wire x1="45.536" y1="32.836" x2="44.704" y2="32.004" width="0.4064" layer="1"/>
+<wire x1="44.704" y1="32.004" x2="27.432" y2="32.004" width="0.4064" layer="1"/>
+<wire x1="27.432" y1="32.004" x2="26.924" y2="31.496" width="0.4064" layer="1"/>
+<via x="26.924" y="31.496" extent="1-16" drill="0.6"/>
+<wire x1="26.924" y1="31.496" x2="26.775125" y2="31.496" width="0.4064" layer="16"/>
+<wire x1="26.775125" y1="31.496" x2="16.94616875" y2="21.66704375" width="0.4064" layer="16"/>
 </signal>
 <signal name="DATA">
-<contactref element="SOLENOID_DATA" pad="C4"/>
+<contactref element="MICRO_BOARD" pad="65"/>
+<contactref element="MICRO_BOARD" pad="66"/>
+<contactref element="SOLENOID_DATA" pad="C1"/>
+<wire x1="50.336" y1="37.768" x2="50.336" y2="34.368" width="0.4064" layer="1"/>
+<wire x1="50.336" y1="34.368" x2="50.336" y2="33.318" width="0.4064" layer="1"/>
+<wire x1="50.336" y1="33.318" x2="47.498" y2="30.48" width="0.4064" layer="1"/>
+<wire x1="47.498" y1="30.48" x2="30.226" y2="30.48" width="0.4064" layer="1"/>
+<wire x1="21.188809375" y1="17.424403125" x2="21.188809375" y2="17.632809375" width="0.4064" layer="16"/>
+<wire x1="21.188809375" y1="17.632809375" x2="22.606" y2="19.05" width="0.4064" layer="16"/>
+<wire x1="22.606" y1="19.05" x2="22.606" y2="22.86" width="0.4064" layer="16"/>
+<via x="29.21" y="29.464" extent="1-16" drill="0.6"/>
+<wire x1="29.21" y1="29.464" x2="22.606" y2="22.86" width="0.4064" layer="16"/>
+<wire x1="29.21" y1="29.464" x2="30.226" y2="30.48" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$11">
 </signal>

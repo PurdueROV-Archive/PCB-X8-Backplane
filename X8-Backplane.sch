@@ -914,6 +914,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="MAIN_CAM_DATA" library="Connectors" deviceset="MICRO-FIT-4-SMD" device="" technology="-PART"/>
 <part name="SEC_CAM_2" library="Connectors" deviceset="MICRO-FIT-4-SMD" device="" technology="-PART"/>
 <part name="SEC_CAM_1" library="Connectors" deviceset="MICRO-FIT-4-SMD" device="" technology="-PART"/>
+<part name="P+2" library="supply1" deviceset="+5V" device=""/>
+<part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -946,10 +948,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="EXTRA_SERVO" gate="G$1" x="68.58" y="-167.64" rot="R90"/>
 <instance part="ETH_POWER" gate="G$1" x="25.4" y="91.44" rot="R90"/>
 <instance part="SOLENOID_POWER" gate="G$1" x="345.44" y="91.44" rot="R90"/>
-<instance part="SOLENOID_DATA" gate="G$1" x="345.44" y="68.58" rot="R90"/>
+<instance part="SOLENOID_DATA" gate="G$1" x="139.7" y="-60.96" rot="R90"/>
 <instance part="MAIN_CAM_DATA" gate="G$1" x="149.86" y="-149.86" rot="R90"/>
 <instance part="SEC_CAM_2" gate="G$1" x="154.94" y="-109.22" rot="R90"/>
 <instance part="SEC_CAM_1" gate="G$1" x="154.94" y="-91.44" rot="R90"/>
+<instance part="P+2" gate="1" x="63.5" y="-7.62" smashed="yes">
+<attribute name="VALUE" x="58.42" y="-7.62" size="1.778" layer="96"/>
+</instance>
+<instance part="GND1" gate="1" x="63.5" y="-63.5" smashed="yes">
+<attribute name="VALUE" x="60.96" y="-66.04" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -1194,15 +1202,59 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="76.2" y1="-165.1" x2="96.52" y2="-165.1" width="0.1524" layer="91"/>
 <label x="78.74" y="-165.1" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="SCL" class="0">
 <segment>
-<pinref part="NAV_COM" gate="G$1" pin="C4"/>
-<wire x1="76.2" y1="-104.14" x2="96.52" y2="-104.14" width="0.1524" layer="91"/>
-<label x="78.74" y="-104.14" size="1.778" layer="95"/>
+<pinref part="MICRO_BOARD" gate="G$1" pin="11"/>
+<wire x1="68.58" y1="-40.64" x2="63.5" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="-40.64" x2="63.5" y2="-43.18" width="0.1524" layer="91"/>
+<pinref part="MICRO_BOARD" gate="G$1" pin="18"/>
+<wire x1="63.5" y1="-43.18" x2="63.5" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="-45.72" x2="63.5" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="-48.26" x2="63.5" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="-50.8" x2="63.5" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="-53.34" x2="63.5" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="-55.88" x2="63.5" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="-58.42" x2="68.58" y2="-58.42" width="0.1524" layer="91"/>
+<pinref part="MICRO_BOARD" gate="G$1" pin="17"/>
+<wire x1="68.58" y1="-55.88" x2="63.5" y2="-55.88" width="0.1524" layer="91"/>
+<junction x="63.5" y="-55.88"/>
+<pinref part="MICRO_BOARD" gate="G$1" pin="16"/>
+<wire x1="68.58" y1="-53.34" x2="63.5" y2="-53.34" width="0.1524" layer="91"/>
+<junction x="63.5" y="-53.34"/>
+<pinref part="MICRO_BOARD" gate="G$1" pin="15"/>
+<wire x1="68.58" y1="-50.8" x2="63.5" y2="-50.8" width="0.1524" layer="91"/>
+<junction x="63.5" y="-50.8"/>
+<pinref part="MICRO_BOARD" gate="G$1" pin="14"/>
+<wire x1="68.58" y1="-48.26" x2="63.5" y2="-48.26" width="0.1524" layer="91"/>
+<junction x="63.5" y="-48.26"/>
+<pinref part="MICRO_BOARD" gate="G$1" pin="13"/>
+<wire x1="68.58" y1="-45.72" x2="63.5" y2="-45.72" width="0.1524" layer="91"/>
+<junction x="63.5" y="-45.72"/>
+<pinref part="MICRO_BOARD" gate="G$1" pin="12"/>
+<wire x1="68.58" y1="-43.18" x2="63.5" y2="-43.18" width="0.1524" layer="91"/>
+<junction x="63.5" y="-43.18"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="63.5" y1="-58.42" x2="63.5" y2="-60.96" width="0.1524" layer="91"/>
+<junction x="63.5" y="-58.42"/>
 </segment>
 </net>
-<net name="SDA" class="0">
+<net name="NAV_SCL" class="0">
+<segment>
+<pinref part="MICRO_BOARD" gate="G$1" pin="42"/>
+<wire x1="91.44" y1="-43.18" x2="104.14" y2="-43.18" width="0.1524" layer="91"/>
+<label x="96.52" y="-43.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="NAV_COM" gate="G$1" pin="C2"/>
+<wire x1="76.2" y1="-109.22" x2="96.52" y2="-109.22" width="0.1524" layer="91"/>
+<label x="78.74" y="-109.22" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="NAV_SDA" class="0">
+<segment>
+<pinref part="MICRO_BOARD" gate="G$1" pin="41"/>
+<wire x1="91.44" y1="-40.64" x2="104.14" y2="-40.64" width="0.1524" layer="91"/>
+<label x="96.52" y="-40.64" size="1.778" layer="95"/>
+</segment>
 <segment>
 <pinref part="NAV_COM" gate="G$1" pin="C3"/>
 <wire x1="76.2" y1="-106.68" x2="96.52" y2="-106.68" width="0.1524" layer="91"/>
@@ -1211,9 +1263,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="SONAR_PWM" class="0">
 <segment>
-<pinref part="NAV_COM" gate="G$1" pin="C2"/>
-<wire x1="76.2" y1="-109.22" x2="96.52" y2="-109.22" width="0.1524" layer="91"/>
-<label x="78.74" y="-109.22" size="1.778" layer="95"/>
+<pinref part="MICRO_BOARD" gate="G$1" pin="34"/>
+<wire x1="91.44" y1="-22.86" x2="104.14" y2="-22.86" width="0.1524" layer="91"/>
+<label x="96.52" y="-22.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="NAV_COM" gate="G$1" pin="C4"/>
+<wire x1="76.2" y1="-104.14" x2="96.52" y2="-104.14" width="0.1524" layer="91"/>
+<label x="78.74" y="-104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SONAR_DAC" class="0">
@@ -1221,6 +1278,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="NAV_COM" gate="G$1" pin="C1"/>
 <wire x1="76.2" y1="-111.76" x2="96.52" y2="-111.76" width="0.1524" layer="91"/>
 <label x="78.74" y="-111.76" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="MICRO_BOARD" gate="G$1" pin="46"/>
+<wire x1="91.44" y1="-53.34" x2="104.14" y2="-53.34" width="0.1524" layer="91"/>
+<label x="96.52" y="-53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -1286,11 +1348,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="78.74" y="-129.54" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SOLENOID_DATA" gate="G$1" pin="C1"/>
-<wire x1="353.06" y1="66.04" x2="368.3" y2="66.04" width="0.1524" layer="91"/>
-<label x="355.6" y="66.04" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="ETH_POWER" gate="G$1" pin="C1"/>
 <wire x1="33.02" y1="88.9" x2="35.56" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="88.9" x2="35.56" y2="91.44" width="0.1524" layer="91"/>
@@ -1305,19 +1362,60 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="76.2" y1="-167.64" x2="96.52" y2="-167.64" width="0.1524" layer="91"/>
 <label x="78.74" y="-167.64" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="MICRO_BOARD" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="-15.24" x2="63.5" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="-15.24" x2="63.5" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="MICRO_BOARD" gate="G$1" pin="2"/>
+<wire x1="63.5" y1="-17.78" x2="68.58" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="-17.78" x2="63.5" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="63.5" y="-17.78"/>
+<pinref part="MICRO_BOARD" gate="G$1" pin="6"/>
+<wire x1="63.5" y1="-20.32" x2="63.5" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="-22.86" x2="63.5" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="-25.4" x2="63.5" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="-27.94" x2="68.58" y2="-27.94" width="0.1524" layer="91"/>
+<pinref part="MICRO_BOARD" gate="G$1" pin="5"/>
+<wire x1="68.58" y1="-25.4" x2="63.5" y2="-25.4" width="0.1524" layer="91"/>
+<junction x="63.5" y="-25.4"/>
+<pinref part="MICRO_BOARD" gate="G$1" pin="4"/>
+<wire x1="68.58" y1="-22.86" x2="63.5" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="63.5" y="-22.86"/>
+<pinref part="MICRO_BOARD" gate="G$1" pin="3"/>
+<wire x1="68.58" y1="-20.32" x2="63.5" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="63.5" y="-20.32"/>
+<pinref part="P+2" gate="1" pin="+5V"/>
+<wire x1="63.5" y1="-10.16" x2="63.5" y2="-15.24" width="0.1524" layer="91"/>
+<junction x="63.5" y="-15.24"/>
+</segment>
+<segment>
+<pinref part="SOLENOID_DATA" gate="G$1" pin="C4"/>
+<wire x1="147.32" y1="-55.88" x2="162.56" y2="-55.88" width="0.1524" layer="91"/>
+<label x="149.86" y="-55.88" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="CANH" class="0">
 <segment>
-<pinref part="BRICKS_COM" gate="G$1" pin="C4"/>
-<wire x1="127" y1="-104.14" x2="137.16" y2="-104.14" width="0.1524" layer="91"/>
-<label x="129.54" y="-104.14" size="1.778" layer="95"/>
+<pinref part="MICRO_BOARD" gate="G$1" pin="39"/>
+<wire x1="91.44" y1="-35.56" x2="104.14" y2="-35.56" width="0.1524" layer="91"/>
+<label x="96.52" y="-35.56" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="CANL" class="0">
 <segment>
 <pinref part="BRICKS_COM" gate="G$1" pin="C3"/>
 <wire x1="127" y1="-106.68" x2="137.16" y2="-106.68" width="0.1524" layer="91"/>
 <label x="129.54" y="-106.68" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CANL" class="0">
+<segment>
+<pinref part="MICRO_BOARD" gate="G$1" pin="38"/>
+<wire x1="91.44" y1="-33.02" x2="104.14" y2="-33.02" width="0.1524" layer="91"/>
+<label x="96.52" y="-33.02" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="BRICKS_COM" gate="G$1" pin="C4"/>
+<wire x1="127" y1="-104.14" x2="137.16" y2="-104.14" width="0.1524" layer="91"/>
+<label x="129.54" y="-104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -1346,10 +1444,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="355.6" y="134.62" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="BACK_UP_TEMP_DATA" class="0">
 <segment>
 <pinref part="TEMP_SENSOR" gate="G$1" pin="C1"/>
 <wire x1="353.06" y1="129.54" x2="370.84" y2="129.54" width="0.1524" layer="91"/>
+<label x="355.6" y="129.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="MICRO_BOARD" gate="G$1" pin="25"/>
+<wire x1="68.58" y1="-76.2" x2="55.88" y2="-76.2" width="0.1524" layer="91"/>
+<label x="38.1" y="-76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MAIN_SERVO" class="0">
@@ -1357,6 +1461,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="MAIN_CAM_DATA" gate="G$1" pin="C4"/>
 <wire x1="157.48" y1="-144.78" x2="177.8" y2="-144.78" width="0.1524" layer="91"/>
 <label x="160.02" y="-144.78" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="MICRO_BOARD" gate="G$1" pin="37"/>
+<wire x1="91.44" y1="-30.48" x2="104.14" y2="-30.48" width="0.1524" layer="91"/>
+<label x="96.52" y="-30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LED_PWM" class="0">
@@ -1372,6 +1481,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="119.38" y1="111.76" x2="104.14" y2="111.76" width="0.1524" layer="91"/>
 <label x="104.14" y="111.76" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="MICRO_BOARD" gate="G$1" pin="36"/>
+<wire x1="91.44" y1="-27.94" x2="104.14" y2="-27.94" width="0.1524" layer="91"/>
+<label x="96.52" y="-27.94" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="BUCK_SDA" class="0">
 <segment>
@@ -1379,32 +1493,58 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="119.38" y1="109.22" x2="104.14" y2="109.22" width="0.1524" layer="91"/>
 <label x="104.14" y="109.22" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="MICRO_BOARD" gate="G$1" pin="35"/>
+<wire x1="91.44" y1="-25.4" x2="104.14" y2="-25.4" width="0.1524" layer="91"/>
+<label x="96.52" y="-25.4" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SECOND_SERVO" class="0">
 <segment>
 <pinref part="EXTRA_SERVO" gate="G$1" pin="C4"/>
 <wire x1="76.2" y1="-162.56" x2="96.52" y2="-162.56" width="0.1524" layer="91"/>
+<label x="78.74" y="-162.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="MICRO_BOARD" gate="G$1" pin="60"/>
+<wire x1="91.44" y1="-88.9" x2="104.14" y2="-88.9" width="0.1524" layer="91"/>
+<label x="96.52" y="-88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CLK" class="0">
 <segment>
-<pinref part="SOLENOID_DATA" gate="G$1" pin="C3"/>
-<wire x1="353.06" y1="71.12" x2="368.3" y2="71.12" width="0.1524" layer="91"/>
-<label x="355.6" y="71.12" size="1.778" layer="95"/>
+<pinref part="MICRO_BOARD" gate="G$1" pin="32"/>
+<wire x1="91.44" y1="-17.78" x2="104.14" y2="-17.78" width="0.1524" layer="91"/>
+<label x="96.52" y="-17.78" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SOLENOID_DATA" gate="G$1" pin="C2"/>
+<wire x1="147.32" y1="-60.96" x2="162.56" y2="-60.96" width="0.1524" layer="91"/>
+<label x="149.86" y="-60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ENABLE" class="0">
 <segment>
-<pinref part="SOLENOID_DATA" gate="G$1" pin="C2"/>
-<wire x1="353.06" y1="68.58" x2="368.3" y2="68.58" width="0.1524" layer="91"/>
-<label x="355.6" y="68.58" size="1.778" layer="95"/>
+<pinref part="MICRO_BOARD" gate="G$1" pin="31"/>
+<wire x1="91.44" y1="-15.24" x2="104.14" y2="-15.24" width="0.1524" layer="91"/>
+<label x="96.52" y="-15.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SOLENOID_DATA" gate="G$1" pin="C3"/>
+<wire x1="147.32" y1="-58.42" x2="162.56" y2="-58.42" width="0.1524" layer="91"/>
+<label x="149.86" y="-58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DATA" class="0">
 <segment>
-<pinref part="SOLENOID_DATA" gate="G$1" pin="C4"/>
-<wire x1="353.06" y1="73.66" x2="368.3" y2="73.66" width="0.1524" layer="91"/>
-<label x="355.6" y="73.66" size="1.778" layer="95"/>
+<pinref part="MICRO_BOARD" gate="G$1" pin="33"/>
+<wire x1="91.44" y1="-20.32" x2="104.14" y2="-20.32" width="0.1524" layer="91"/>
+<label x="96.52" y="-20.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SOLENOID_DATA" gate="G$1" pin="C1"/>
+<wire x1="147.32" y1="-63.5" x2="162.56" y2="-63.5" width="0.1524" layer="91"/>
+<label x="149.86" y="-63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
