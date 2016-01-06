@@ -994,6 +994,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="P+1" gate="1" pin="+12V"/>
 <wire x1="111.76" y1="68.58" x2="106.68" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="68.58" x2="106.68" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="73.66" x2="111.76" y2="76.2" width="0.1524" layer="91"/>
+<junction x="111.76" y="73.66"/>
+<pinref part="BUCK_REGULATOR_BOARD" gate="G$1" pin="15"/>
+<wire x1="111.76" y1="76.2" x2="119.38" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="76.2" x2="111.76" y2="78.74" width="0.1524" layer="91"/>
+<junction x="111.76" y="76.2"/>
+<pinref part="BUCK_REGULATOR_BOARD" gate="G$1" pin="14"/>
+<wire x1="111.76" y1="78.74" x2="119.38" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+7" gate="1" pin="+12V"/>
@@ -1001,15 +1009,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="BUCK_REGULATOR_BOARD" gate="G$1" pin="21"/>
 <wire x1="142.24" y1="111.76" x2="149.86" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="111.76" x2="149.86" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="BUCK_REGULATOR_BOARD" gate="G$1" pin="26"/>
 <wire x1="149.86" y1="109.22" x2="149.86" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="106.68" x2="149.86" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="104.14" x2="149.86" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="101.6" x2="149.86" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="99.06" x2="142.24" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="BUCK_REGULATOR_BOARD" gate="G$1" pin="25"/>
 <wire x1="142.24" y1="101.6" x2="149.86" y2="101.6" width="0.1524" layer="91"/>
-<junction x="149.86" y="101.6"/>
 <pinref part="BUCK_REGULATOR_BOARD" gate="G$1" pin="24"/>
 <wire x1="142.24" y1="104.14" x2="149.86" y2="104.14" width="0.1524" layer="91"/>
 <junction x="149.86" y="104.14"/>
@@ -1336,6 +1340,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="114.3" y1="93.98" x2="109.22" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="93.98" x2="109.22" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="P+5" gate="1" pin="+5V"/>
+<wire x1="114.3" y1="106.68" x2="114.3" y2="109.22" width="0.1524" layer="91"/>
+<junction x="114.3" y="106.68"/>
+<pinref part="BUCK_REGULATOR_BOARD" gate="G$1" pin="2"/>
+<wire x1="114.3" y1="109.22" x2="119.38" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="109.22" x2="114.3" y2="111.76" width="0.1524" layer="91"/>
+<junction x="114.3" y="109.22"/>
+<pinref part="BUCK_REGULATOR_BOARD" gate="G$1" pin="1"/>
+<wire x1="114.3" y1="111.76" x2="119.38" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="MA5N_CAM_POW" gate="G$1" pin="C2"/>
@@ -1477,26 +1489,26 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="BUCK_SCL" class="0">
 <segment>
-<pinref part="BUCK_REGULATOR_BOARD" gate="G$1" pin="1"/>
-<wire x1="119.38" y1="111.76" x2="104.14" y2="111.76" width="0.1524" layer="91"/>
-<label x="104.14" y="111.76" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="MICRO_BOARD" gate="G$1" pin="36"/>
 <wire x1="91.44" y1="-27.94" x2="104.14" y2="-27.94" width="0.1524" layer="91"/>
 <label x="96.52" y="-27.94" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="BUCK_REGULATOR_BOARD" gate="G$1" pin="26"/>
+<wire x1="142.24" y1="99.06" x2="154.94" y2="99.06" width="0.1524" layer="91"/>
+<label x="147.32" y="99.06" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="BUCK_SDA" class="0">
-<segment>
-<pinref part="BUCK_REGULATOR_BOARD" gate="G$1" pin="2"/>
-<wire x1="119.38" y1="109.22" x2="104.14" y2="109.22" width="0.1524" layer="91"/>
-<label x="104.14" y="109.22" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="MICRO_BOARD" gate="G$1" pin="35"/>
 <wire x1="91.44" y1="-25.4" x2="104.14" y2="-25.4" width="0.1524" layer="91"/>
 <label x="96.52" y="-25.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="BUCK_REGULATOR_BOARD" gate="G$1" pin="27"/>
+<wire x1="142.24" y1="96.52" x2="154.94" y2="96.52" width="0.1524" layer="91"/>
+<label x="147.32" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SECOND_SERVO" class="0">
